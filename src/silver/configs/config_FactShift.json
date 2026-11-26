@@ -1,0 +1,34 @@
+
+{
+    "source": {
+        "source_table": "group_project.bronze.factshift",
+        "source_name": "fact_shift"
+    },
+
+    "target": {
+        "target_table": "group_project.silver.fact_shift"
+    },
+
+    "cast_columns": {
+        "shift_id": "int",
+        "people_id": "int",
+        "county_id": "int",
+        "scheduled_start" : "timestamp",
+        "scheduled_end" : "timestamp"
+    },
+
+    "select_columns": [
+        "shift_id",
+        "people_id",
+        "county_id",
+        "scheduled_start",
+        "scheduled_end"
+
+    ],
+    "keys" : [
+        "shift_id" , "people_id"
+    ],
+   "scd": {
+        "type": 2
+    }
+}

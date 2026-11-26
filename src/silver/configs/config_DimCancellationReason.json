@@ -1,0 +1,17 @@
+{
+  "source":{
+    "source_path":"group_project.bronze.dim_cancel"
+  },
+
+  "columns":{
+    "cancellation_id":"cancellation_id",
+    "cancellation_reason":"cancellation_reason",
+    "reason_group":"reason_group",
+    "is_customer_driven":"is_customer_driven",
+    "severity":"severity"
+
+  },
+  "target": {
+        "target_table": "group_project.silver.dim_cancellationReason"
+    }
+}
